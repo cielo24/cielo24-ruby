@@ -14,7 +14,7 @@ module Cielo24Cli
     password_option = [:p, :required => false, :desc => 'cielo24 password', :banner => 'password', :hide => true]
     securekey_option = [:k, :required => false, :desc => 'The API Secure Key', :banner => 'securekey', :hide => true]
     api_token_option = [:N, :required => false, :desc => 'The API token of the current session', :banner => 'token', :hide => true]
-    server_url_option =[:s, :required => false, :desc => 'cielo24 server URL [https://api.cielo24.com]', :banner => 'server_url', :hide => true, :default => 'http://api.cielo24.com']
+    server_url_option =[:s, :required => false, :desc => 'cielo24 server URL [https://api.cielo24.com]', :banner => 'server_url', :hide => true, :default => 'https://api.cielo24.com']
     # JOB CONTROL:
     job_id_option = [:j, :required => true, :desc => 'Job Id', :banner => 'jobid']
     media_url_option = [:m, :required => false, :desc => 'Media URL', :banner => 'mediaurl']
