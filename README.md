@@ -93,7 +93,7 @@ Class | Method | HTTP request | Description
 *cielo24::JobApi* | [**job_info**](docs/JobApi.md#job_info) | **GET** /job/info | 
 *cielo24::JobApi* | [**new_job**](docs/JobApi.md#new_job) | **POST** /job/new | 
 *cielo24::JobApi* | [**perform_transcription**](docs/JobApi.md#perform_transcription) | **POST** /job/perform_transcription | 
-*cielo24::JobApi* | [**perform_translation**](docs/JobApi.md#perform_translation) | **POST** /job/perform_translation | 
+*cielo24::JobApi* | [**perform_translation**](docs/JobApi.md#perform_translation) | **POST** /job/translate | 
 
 
 ## Documentation for Models

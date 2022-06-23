@@ -241,7 +241,7 @@ module cielo24
     def valid?
       priority_validator = EnumAttributeValidator.new('String', ["STANDARD", "PRIORITY"])
       return false unless priority_validator.valid?(@priority)
-      fidelity_validator = EnumAttributeValidator.new('String', ["MECHANICAL", "PREMIUM", "PROFESSIONAL"])
+      fidelity_validator = EnumAttributeValidator.new('String', ["MECHANICAL", "PREMIUM", "PROFESSIONAL", "HIGH"])
       return false unless fidelity_validator.valid?(@fidelity)
       job_status_validator = EnumAttributeValidator.new('String', ["Authorizing", "Pending", "In Process", "Complete", "Media Failure", "Reviewing"])
       return false unless job_status_validator.valid?(@job_status)
@@ -263,7 +263,7 @@ module cielo24
     # Custom attribute writer method checking allowed values (enum).
     # @param [Object] fidelity Object to be assigned
     def fidelity=(fidelity)
-      validator = EnumAttributeValidator.new('String', ["MECHANICAL", "PREMIUM", "PROFESSIONAL"])
+      validator = EnumAttributeValidator.new('String', ["MECHANICAL", "PREMIUM", "PROFESSIONAL", "HIGH"])
       unless validator.valid?(fidelity)
         fail ArgumentError, "invalid value for \"fidelity\", must be one of #{validator.allowable_values}."
       end

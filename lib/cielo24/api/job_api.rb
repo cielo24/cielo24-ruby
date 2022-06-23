@@ -819,7 +819,7 @@ module cielo24
         fail ArgumentError, "invalid value for \"approve_uplevel\", must be one of #{allowable_values}"
       end
       # resource path
-      local_var_path = '/job/perform_translation'
+      local_var_path = '/job/translate'
 
       # query parameters
       query_params = opts[:query_params] || {}
